@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+button {
+    border-radius: 0;
+    outline: none !important;
+    background: none;
+    -webkit-appearance: none;
+}
+
+.container {
+    max-width: 120rem; /*layout + paddings*/
+    margin: 0 auto;
+    padding: 0 1rem; 
+}
+
+.goods__title {
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 150%;    
+    margin: 4rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.goods__row {
+    max-width: 118rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    background: #FFF;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+    position: relative;
+}
+
+.item_labels::after{
+    content: "НОВИНКА";
+    position: absolute;
+    z-index: 1;
+    background: #FDCFF3;
+    border-radius: 0.8rem;
+    text-align: center;
+    width: 11.1rem;
+    height: 2.4rem;
+    color: #2F2F2F;
+    font-size: 1.6rem;
+    line-height: 150%;
+    left: 16.73px;
+    top: 16.33px;
+}
+.item_labels::before{
+    content: "ПОСЛЕДНИЙ";
+    position: absolute;
+    z-index: 1;
+    background: #FFCF56;
+    border-radius: 0.8rem;
+    text-align: center;
+    width: 13.6rem;
+    height: 2.4rem;
+    color: #2F2F2F;
+    font-size: 1.6rem;
+    line-height: 150%;
+    right: 101px;
+    top: 16.33px;
+}
+
+.item__title {
+color: #2F2F2F;
+font-weight: 900;
+font-size: 2.4rem;
+line-height: 150%;
+}
+
+.item__wrapper{
+    margin: 2.4rem 2.4rem 0;   
+    height: 14.8rem;
+}
+
+.item__desc {
+    color: #2F2F2F;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;    
+    margin: 1.6rem 0 0 0;
+}
+
+.item__btn {
+    color: #42940F;
+    border: 0.2rem solid #42940F;
+    border-radius: 0.8rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    padding: 1rem 0;    
+    margin: 2.4rem;
+}
+
+.item__btn:not([disabled]):hover{
+    color: #FFF;
+    background: #42940F;
+    border: 2px solid #42940F;
+}
+.item__btn:not([disabled]):active{
+    color: #FFF;
+    background: #1F5200;
+    border: 2px solid #1F5200;
+}
+
+button:disabled { 
+    color: #FFF;
+    background: #4E4E4E;
+    border: 1px solid #4E4E4E;
+ }
